@@ -104,5 +104,13 @@ Copy and paste the IP address from question 5, then press Enter.
 Here you will find various details such as the country, city, and even latitude and longitude. However, the specific answer we are looking for is the country: Vietnam.
 <img src="images/14.png" width="550">
 Find another engaging lab using the ipgeolocation service in our project on GitHub:<a href="https://github.com/J-SinwooLee/Azure-SIEM-Honeypot">Azure-SIEM-Honeypot</a>.
+<br>
+<h4>Question #7: What is the range of source ports that were used by the attacker to make these login requests?</h4>
+This question could be answered more quickly using Excel or Google Sheets, but we will continue to use PowerShell.
+Type:<b>(Get-Content 'BTLO_Bruteforce_Challenge.csv' | Select-String -Pattern 'Source Port:' | ForEach-Object { $_ -replace '.*Source Port:\s*(\d+).*', '$1' }).Trim() | Out-File 'source_ports.txt'</b>
+<img src="images/15.png" width="1000">
+This will result in a file named 'source_ports.txt' that contains one source port number per line, with each number being a port extracted from lines containing 'Source Port:' in the original CSV file. This file will not contain any other information besides the port numbers, stripped of all additional text and whitespace.
+<img src="images/16.png" width="550">
+<br>
 <h2>Conclusion</h2>
 
