@@ -41,20 +41,30 @@ For us we are going to utilize powershell.
 
 Let's use <b>cat</b> command to get this thing out! Note that this may take awhile to load everything.
 
-<img src="images/5.png" width="550">
+<img src="images/5.png" width="1000">
 <br>
 This is the screen you will see, and you'll notice that the scrollbar has gotten much smaller and moved all the way down
 
 <img src="images/6.png" width="550">
 <br>
-We can go through whole logs to find the answer that we are looking for or we can utilize command line on PowerShell.
-Let's clear this out with <b>cls</b> and start over.
-<r>123</r>
+We have the option to comb through entire logs to find the answers we need, or we can efficiently use the command line in PowerShell.
 
-<p style="color: red;">This text will be red.</p>
-<span style="color:red;">This text will be red.</span>
+Let's clear the screen with the <b>cls</b> command and start afresh.
+<br>
+The first question we need to address is: How many Audit Failure events are there?
+<br>
+To find this, type the following command:
+<b>(Get-Content BTLO_Bruteforce_Challenge.csv | Select-String -Pattern "Audit Failure").Count</b> then We get our answer 3103.
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+<img src="images/7.png" width="1000">
+<br>
+Moving on to the next question: What is the username of the local account that is being targeted?
 
+To find this, open a new PowerShell window and type:<b>cat .\BTLO_Bruteforce_Challenge.csv</b>
+<br>
+Then, scroll up to the last audit failure log. As you can see, the account name being targeted is "administrator."
+
+<img src="images/8.png" width="550">
+<br>
 <h2>Conclusion</h2>
 
