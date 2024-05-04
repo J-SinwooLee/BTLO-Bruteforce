@@ -5,7 +5,7 @@
 The BTLO-Bruteforce project involves analyzing a set of logs and network data to identify patterns of brute force attacks. We use various tools and environments, including PowerShell, text editors, Excel, and Google Sheets, to investigate and answer questions based on the provided source material from Blue Team Lab Online (BTLO).
 <hr>
 
-<h4>Cloud Tools and Evnironment</h4>
+<h4>Tools and Evnironment</h4>
 PowerShell, Text editor, Excel, Google sheet
 
 <h4>Source material</h4>
