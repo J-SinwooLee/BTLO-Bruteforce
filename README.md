@@ -2,7 +2,7 @@
 
 <hr>
 <h3>Overview</h3>
-
+The BTLO-Bruteforce project involves analyzing a set of logs and network data to identify patterns of brute force attacks. We use various tools and environments, including PowerShell, text editors, Excel, and Google Sheets, to investigate and answer questions based on the provided source material from Blue Team Lab Online (BTLO).
 <hr>
 
 <h4>Cloud Tools and Evnironment</h4>
@@ -14,11 +14,11 @@ PowerShell, Text editor, Excel, Google sheet
 
 <h2>Project walk-through</h2>
 <hr>
-Firt go to Blue Team Lab Online aka BTLO to download the file.
+First, visit Blue Team Lab Online (BTLO) to download the file.
 
 <img src="images/1.png" width="350">
 <br>
-Once you download the zip file. You will have to extract them and this will require a password which you can find next download file on BTLO website.
+After downloading the zip file, you'll need to extract it. This requires a password, which you can find on the BTLO website.
 
 <img src="images/2.png" width="350">
 <img src="images/3.png" width="350">
@@ -121,4 +121,4 @@ Now, open the 'sorted_ports.txt' file to identify the first and the last number,
 <img src="images/20.png" width="550">
 
 <h2>Conclusion</h2>
-
+Being the first to analyze this data with PowerShell, I found it challenging but fun. By following this step-by-step walkthrough, you can identify key patterns like Audit Failure events, targeted usernames, and source IPs. For a related lab on SIEM honeypots, visit <a href="https://github.com/J-SinwooLee/Azure-SIEM-Honeypot">Azure-SIEM-Honeypot</a> on GitHub.
