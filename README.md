@@ -112,5 +112,13 @@ Type:<b>(Get-Content 'BTLO_Bruteforce_Challenge.csv' | Select-String -Pattern 'S
 This will result in a file named 'source_ports.txt' that contains one source port number per line, with each number being a port extracted from lines containing 'Source Port:' in the original CSV file. This file will not contain any other information besides the port numbers, stripped of all additional text and whitespace.
 <img src="images/16.png" width="550">
 <br>
+Then type the following command:<b>(Get-Content 'source_ports.txt' | Where-Object { $_ -match '\d+' } | ForEach-Object { $_ -replace '.*?(\d+).*', '$1' } | Sort-Object { [int]$_ }) | Out-File 'sorted_ports.txt'</b> T
+<img src="images/17.png" width="1000">
+This will create a new file named sorted_ports.txt. This file contains only the numbers extracted from the source_ports.txt file, sorted from lowest to highest.
+<img src="images/18.png" width="550">
+Now, open the 'sorted_ports.txt' file to identify the first and the last number, which are 49162 and 65534.
+<img src="images/19.png" width="550">
+<img src="images/20.png" width="550">
+
 <h2>Conclusion</h2>
 
