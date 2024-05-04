@@ -87,5 +87,22 @@ I've also included this information in case you are not familiar with the term "
 Below is a sample log from the BTLO file:
 
 <img src="images/11.png" width="550">
+<br>
+<h4>Question #5: What is the source IP conducting this attack?</h4>
+You can find this information under "Network Information." Look for "Source Network Address," which is 113.161.192.227.
+
+<img src="images/12.png" width="550">
+<br>
+<h4>Question #6: What country is this IP address associated with?</h4>
+For this we are going to utilize <a href="https://ipgeolocation.io/">ipgeolocation</a>.
+
+This website offers detailed geographical information about IP addresses.
+<br>
+Copy and paste the IP address from question 5, then press Enter.
+
+<img src="images/13.png" width="550">
+Here you will find various details such as the country, city, and even latitude and longitude. However, the specific answer we are looking for is the country: Vietnam.
+<img src="images/14.png" width="550">
+Find another engaging lab using the ipgeolocation service in our project on GitHub:<a href="https://github.com/J-SinwooLee/Azure-SIEM-Honeypot">Azure-SIEM-Honeypot</a>.
 <h2>Conclusion</h2>
 
